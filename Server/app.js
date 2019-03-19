@@ -8,7 +8,8 @@ const getMaxID = require("./getMaxID");
 const userData = require("./UserData");
 
 const app = express();
-const port = 3011;
+//const port = 3011;
+const port = process.env.PORT || 3011;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
